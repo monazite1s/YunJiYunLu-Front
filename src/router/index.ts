@@ -4,7 +4,7 @@ import 'nprogress/nprogress.css';
 import routes from './autoImport';
 import { useUserStore } from '@/store/user';
 
-console.log(routes);
+console.log('routes', routes);
 
 const router = createRouter({
   history: createWebHistory(),

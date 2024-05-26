@@ -102,7 +102,7 @@ const loginAction = () => {
     userIdOrPhone: account.i.value,
     password: account.a.value,
   }).then((res) => {
-    console.log(res.data, res.data.data.token);
+    console.log(res);
     if (res.data.code == 4005) {
       alert(res.data.message);
     }

@@ -67,7 +67,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
       proxy: {
         // 这里的意思是 以/api开头发送的请求都会被转发到 http://xxx:3000
         '/api': {
-          target: 'http://39.100.238.37:1027',
+          target: 'https://yunjiyunlu.cn',
           // target: 'http://h456jn.natappfree.cc:1027',
           // 改变 Host Header
           changeOrigin: true,

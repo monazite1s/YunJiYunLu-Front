@@ -58,7 +58,7 @@ const timeId = setInterval(() => {
   show().then((res) => {
     value.value = res.data.data.qrcode;
   });
-}, 1700);
+}, 3000);
 const showQr = ref(true);
 const level = ref<Level>('M');
 const renderAs = ref<RenderAs>('svg');

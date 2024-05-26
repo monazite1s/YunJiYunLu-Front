@@ -26,7 +26,8 @@ async function getStudyStatus(weekNum: number, dayTime: number) {
     await newPersonSchedule()
       .then((res) => {
         console.log(res);
-        scheduleData = res.data.data;
+        // scheduleData = res.data.data;
+        scheduleData = [];
       })
       .then(() => {
         console.log(`${scheduleData[weekStatus[weekNum]]}`[dayTime]);
